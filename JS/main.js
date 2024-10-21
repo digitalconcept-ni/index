@@ -1,5 +1,6 @@
 function changeColor() {
-    var color = ['#041f3a', '#f7931e'];
+    var color = ['#041f3a', '#D3D3D3'];
+    // var color = ['#041f3a', '#f7931e'];
     var change = Math.floor(Math.random() * 2);
     return color[change];
 }
@@ -29,6 +30,8 @@ function reparte(totalBloques) {
         // elemento.style.transform = "translate(" + traslado + "em," + traslado2 + "em)";
         elemento.style.transform = 'matrix(' + s1 + ', 0, 0,' + s1 + ',' + traslado + ', ' + traslado2 + ')';
         elemento.style.background = color;
+        elemento.classList.add("shadow");
+
     });
 
 }
