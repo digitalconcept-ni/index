@@ -7,7 +7,7 @@
 
 body {
     position: relative;
-    background: var(--da);
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,8 +40,12 @@ body {
     height: 200px;
     width: 150px;
     /* background: #ab0707; */
-    box-shadow: 10px 15px 20px 7px rgba(0, 0, 0, .3);
     transition: ease 2s;
+}
+
+.shadow{
+    box-shadow: 10px 15px 20px 7px rgba(0, 0, 0, .3);
+    
 }
 
 @media (max-width: 400px) {
